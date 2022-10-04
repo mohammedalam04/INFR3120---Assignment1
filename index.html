@@ -5,14 +5,20 @@
     <!--The head element content is not visible in the browser window--> 
     <head> 
         <!--The UTF-8 character set provides the most support for all symbols and characters--> 
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8">
         <!--The title element is what displays in the browser tab-->
         <title>Welcome</title> 
         <!-- These lines link all separate files used to this one-->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <meta name="viewport" content="width=device-width">
+        <!-- full-size monitor style sheet--> 
+        <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
+        <!-- tablet style sheet--> 
+        <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
+        <!-- phone style sheet--> 
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
     </head> 
     <!--All content displayed in the browser lays within the body element--> 
     <body> 
