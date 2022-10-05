@@ -1,38 +1,50 @@
 @charset "UTF-8"; 
 body { 
     color: white; 
-    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding:0px; 
     margin:0px; 
 } 
-h1,h2,h3,h4,h5,h6,p,li { 
+h1,h2,h3,p,li {
     margin-left:15px; 
     margin-top:0px; 
-} 
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
 #wrapper {
     width: 100%; 
     height: 800px; 
     margin-left: auto; 
     margin-right: auto; 
     background-color:DarkGrey; 
-    } 
+} 
 #right-column { 
     float: none; 
-    height: 600px; 
+    height: 600px;
     background-color: DarkOrange; 
-} 
+}
 #left-column { 
-    float: none; 
+    float: none;
+    display: block;
     height:120px; 
-    } 
-#footer { 
-    height:80px; 
-    background-color:black; 
 } 
+#footer { 
+    height:80px;
+    text-align: center;
+    background-color:black; 
+}
 #banner { 
     height:60px; 
     background-color:black; 
-} 
+}
+#icon {
+    height: 35px;
+    width: 35px;
+}
 .box { 
     width: 45%; 
     min-height:120px; 
