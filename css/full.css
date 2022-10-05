@@ -2,10 +2,14 @@
 /* The body tag style applies to all elements on the page */ 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    display: block;
     background: #323a45;
     color: #f6f7f9;
+    padding:0px; 
+    margin:0px; 
+}
+h1,h2,h3,p,li { 
+    margin-left:15px;
+    margin-top: 0px;
 }
 header {
     background-color: #778899;
@@ -13,21 +17,17 @@ header {
     margin: 10px;
     padding: 0;
     width: auto;
+    overflow: hidden;
 }
-/* overflow:hidden is added to the ul element to prevent li elements from going outside of the list */
+/* overflow:hidden is added to the ul element to prevent li elements from going outside of the nav bar */
 header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     height: 70px;
-    overflow: hidden;
 }
 header img {
-    display: block;
     float: left;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
 }
 header ul li {
     position: relative;
@@ -48,23 +48,16 @@ header li a:hover{
     background-color: #5faeb6;
     height: 50px;
 }
-.active{
+#active{
     background-color: #5faeb6;
     height: 50px;
 }
-header img {
-    height: 50px;
-    width: 50px;
-}
 #wrapper {
     background-color: #3f6184;
-    border-radius: 20px;
-    width: 960px;
+    width: 66%; 
     height: 800px; 
     margin-left: auto; 
-    margin-right: auto;
-    padding: 20px;
-    
+    margin-right: auto; 
 }
 #wrapper a img {
     display: block;
@@ -77,17 +70,14 @@ header img {
 /* Puts content below all left and right floating elements, used for footer separation */
 #footer {
     height:80px;
+    text-align: center;
 }
-#footer img {
+#icon {
     height: 50px;
     width: 50px;
 }
-#top, #bottom, h3, h1 {
+h3, h1 {
     text-align: center;
-}
-#top img{
-    display: block;
-    margin-left: auto;
 }
 #left {
     float: left;
@@ -117,6 +107,21 @@ button {
     border: 2px #f6f7f9 solid;
     box-shadow: 10px 10px 5px black;
     border-radius: 5px;
+}
+.box {
+    width: 60%;
+    height:100px;
+    border-radius:60px;
+    padding:10px;
+    font-family: sans-serif;
+    font-size:30px;
+    text-align:center;
+    animation:move 5s infinite;
+}
+@keyframes move{
+    0% {background: linear-gradient(to bottom, #323a45 0%, #3f6184 100%);}
+    50% {background:linear-gradient(to bottom, #3f6184 0%, #323a45 1000%); transform:translateX(200px);}
+    100% {background: linear-gradient(to bottom, #323a45 0%, #3f6184 100%);}
 }
 .clear{
     clear: both;
