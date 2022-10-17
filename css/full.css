@@ -1,130 +1,71 @@
 @charset "UTF-8";
 /* The body tag style applies to all elements on the page */ 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #323a45;
-    color: #f6f7f9;
-    padding:0px; 
-    margin:0px; 
+  font-family: 'Roboto', sans-serif;
+  background: #323a45;
+  color: #f6f7f9;
+  padding: 0; 
+  margin: 0; 
 }
-h1,h2,h3,p,li { 
-    margin-left:15px;
-    margin-top: 0px;
+header, footer {
+  background-color: #778899;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-header {
-    background-color: #778899;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 0;
-    width: auto;
-    overflow: hidden;
-}
-/* overflow:hidden is added to the ul element to prevent li elements from going outside of the nav bar */
 header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 70px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-header img {
-    float: left;
+a:hover, #active {
+  background-color: #5faeb6;
 }
-header ul li {
-    position: relative;
-    top: 0px;
-}
-header a{
-    display: block;
-    color: #f6f7f9;
-    float: left;
-    height: 50px;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    top: 15px;
-}
-header li a:hover{
-    background-color: #5faeb6;
-    height: 50px;
-}
-#active{
-    background-color: #5faeb6;
-    height: 50px;
-}
-#wrapper {
-    background-color: #3f6184;
-    width: 66%; 
-    height: 800px; 
-    margin-left: auto; 
-    margin-right: auto; 
-}
-#wrapper a img {
-    display: block;
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-/* Puts content below all left and right floating elements, used for footer separation */
-#footer {
-    height:80px;
-    text-align: center;
-}
-.icon {
-    height: 50px;
-    width: 50px;
-}
-h3, h1 {
-    text-align: center;
-}
-#left {
-    float: left;
-    width: 480px;
-    height: 800px;
-}
-#left img {
-    margin: auto;
-}
-#right {
-    float: right;
-    width: 480px;
-    height: 800px;
+header img, footer img, #logo {
+  height: 50px;
+  width: 50px;
 }
 video {
-    width: 400px;
-    padding: 15px;
-    margin-right: 15px;
-    background-color: black;
-    border: 2px #f6f7f9 solid;
-    box-shadow: 10px 10px 5px black;
+  width: 400px;
+  padding: 15px;
+  margin-right: 15px;
+  background-color: black;
+  border: 2px #f6f7f9 solid;
+  box-shadow: 10px 10px 5px black;
 }
-button {
-    background-color :black;
-    color: #f6f7f9;
-    height: 40px;
-    border: 2px #f6f7f9 solid;
-    box-shadow: 10px 10px 5px black;
-    border-radius: 5px;
+#wrapper {
+  background-color: #3f6184;
+  width: 66%; 
+  height: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
-.box {
-    width: 60%;
-    height:100px;
-    border-radius:60px;
-    padding:10px;
-    font-family: sans-serif;
-    font-size:30px;
-    text-align:center;
+#footer_top{
+    text-align: center;
 }
-.animate{
-    animation:move 5s infinite;
+.button {
+  background-color: #778899;
+  color: #f6f7f9;
+  display: block; 
+  float: left;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 25%;
 }
-@keyframes move{
-    0% {background: linear-gradient(to bottom, #323a45 0%, #3f6184 100%);}
-    50% {background:linear-gradient(to bottom, #3f6184 0%, #323a45 1000%); transform:translateX(200px);}
-    100% {background: linear-gradient(to bottom, #323a45 0%, #3f6184 100%);}
+.animate {
+  animation: move 5s infinite;
 }
-.clear{
-    clear: both;
+@keyframes move {
+  0% {background: linear-gradient(to bottom, #323a45 0%, #3f6184 100%);}
+  50% {background:linear-gradient(to bottom, #3f6184 0%, #323a45 1000%); transform:translateX(200px);}
+  100% {background: linear-gradient(to bottom, #323a45 0%, #3f6184 100%);}
+}
+/* Puts content below all left and right
+floating elements, used for footer separation */
+.clear {
+  clear: both;
 }

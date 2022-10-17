@@ -1,73 +1,85 @@
 @charset "UTF-8"; 
 body { 
-    color: white; 
-    font-family: 'Roboto', sans-serif;
-    padding:0px; 
-    margin:0px; 
-} 
+  color: #f6f7f9;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px; 
+  margin: 0px; 
+}
+header { 
+  height: 60px; 
+  background-color: #778899; 
+}
 h1,h2,h3,p,li {
-    margin-left:15px; 
-    margin-top:0px; 
+  margin-left: 15px; 
+  margin-top: 0px; 
 }
 header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 50px;
+  color: #f6f7f9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+header img {
+  height: 50px;
+  width: 50px;
+  display: block;
+  float: left;
+}
+#active img{
+  background-color: #5faeb6;
+  height: 50px;
 }
 #wrapper {
-    width: 100%; 
-    height: 800px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    background-color:DarkGrey; 
+  width: 100%; 
+  height: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: DarkGrey; 
 } 
 #right-column { 
-    float: none; 
-    height: 600px;
-    background-color: DarkOrange; 
+  float: none; 
+  height: 600px;
+  background-color: DarkOrange; 
 }
 #left-column { 
-    float: none;
-    display: block;
-    height:120px; 
+  float: none;
+  display: block;
+  height: 120px; 
 } 
 #footer { 
-    height:80px;
-    text-align: center;
-    background-color:black; 
+  height: 80px;
+  text-align: center;
+  background-color: black; 
 }
-#banner { 
-    height:60px; 
-    background-color:black; 
-}
-#icon {
-    height: 35px;
-    width: 35px;
+.icon {
+  height: 50px;
+  width: 50px;
 }
 .box { 
-    width: 45%; 
-    min-height:120px; 
-    float: left; 
-    background-color:black; 
-    margin: 15px; 
-    opacity: 1;
+  width: 45%; 
+  min-height: 120px; 
+  float: left; 
+  background-color: black; 
+  margin: 15px; 
+  opacity: 1;
 } 
 .button { 
-    font-size: x-large; 
-    text-decoration: none; 
-    background-color:LightBlue; 
-    display: block; 
-    width: 25%;
-    float: left; 
-    padding: 8px; 
-    margin: 5px;
-    border-radius: 15px; 
-    box-shadow: 5px 5px 3px gray; 
-} 
+  font-size: x-large; 
+  text-decoration: none; 
+  background-color: #778899;
+  color: #f6f7f9;
+  display: block; 
+  width: 25%;
+  float: left; 
+  padding: 8px; 
+  margin: 5px;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 3px gray; 
+}
 .button:hover { 
-    box-shadow:5px 5px 3px black; 
+  box-shadow: 5px 5px 3px black; 
 } 
 .clear { 
-    clear: both; 
+  clear: both; 
 }
