@@ -2,76 +2,72 @@
 <!DOCTYPE HTML> 
 <!--HTML element contains all page elements/data--> 
 <html lang="en"> 
-    <!--The head element content is not visible in the browser window--> 
-    <head> 
-        <!--The UTF-8 character set provides the most support for all symbols and characters--> 
-        <meta charset="UTF-8"> 
-        <!--The title element is what displays in the browser tab-->
-        <title>Contact</title> 
-        <!-- These lines link all separate files used to this one-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width">
-        <!-- full-size monitor style sheet--> 
-        <link href="css/full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
-        <!-- tablet style sheet--> 
-        <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
-        <!-- phone style sheet--> 
-        <link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
-    </head> 
-    <!--All content displayed in the browser lays within the body element--> 
-    <body>
-        <!--This div contains all page elements--> 
-        <div id="wrapper">
-            <!--The header contains elements at the top of the page-->
-            <header id="left-column">
-                <!--This list is for the navigation bar-->
-                <nav>
-                    <ul>
-                        <li><img class="icon" src="img/nav_img.png" alt="Cartoon image of Mohammed Alam"></li>
-                        <li><a class="button" href="index.html">HOME</a></li>
-                        <li><a class="button" href="about.html">ABOUT</a></li>
-                        <li><a class="button" href="projects.html">PROJECTS</a></li>
-                        <li><a class="button" id="active" href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="box">
-                <h3>Send me your questions, comments and project related queries!</h3>
-            </div>
-            <div class="box">
-                <form action="mailto:mohammed.alam1@ontariotechu.net" method="post" enctype="text/plain" name="form">
-                    <p>
-                        <label for="name">Your Name</label><br>
-                        <input type="text" id="name" name="name" size="50" placeholder="full name" required>
-                    </p>
-                    <p>
-                        <label for="email">Your Email</label><br>
-                        <input type="email" id="email" name="email" size="50" placeholder="email" required>
-                    </p>
-                    <p>
-                        <label for="comments">Message</label><br>
-                        <textarea id="comments" name="comments" cols="60" rows="6" placeholder="Leave a comment" required></textarea>
-                    </p>
-                    <p>
-                        <label for="norobots">Answer this question to prove you're one of us!</label>
-                        <input type="number" id="norobots" name="norobots" placeholder="2 + 2 = ?" required>
-                    </p>
-                    <p>
-                        <input type="submit" value="Submit"/>
-                        <input type="reset" value="Reset"/>
-                    </p>
-                </form>
-            </div>
-            <div class="clear"></div> 
-            <div id="footer">
-                <p>
-                  <img class="icon" src="img/nav_img.png" alt="Cartoon image of Mohammed Alam"><br>
-                  mohammed.alam1@ontariotechu.net<br>
-                  &copy; 2022 by Mohammed Alam with &hearts;
-                </p>
-            </div>
-        </div>
-    </body> 
-</html> 
+  <!--The head element content is not visible in the browser window--> 
+  <head> 
+    <!--The UTF-8 character set provides the most support for all symbols and characters--> 
+    <meta charset="UTF-8"> 
+    <!--The title element is what displays in the browser tab-->
+    <title>Contact</title> 
+    <!-- These lines link all separate files used to this one-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <!-- full-size monitor style sheet--> 
+    <link href="css/full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
+    <!-- tablet style sheet--> 
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
+    <!-- phone style sheet--> 
+    <link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+  </head> 
+  <!--All content displayed in the browser lays within the body element--> 
+  <body>
+    <!--This div contains all page elements--> 
+    <div id="wrapper">
+      <!--The header contains elements at the top of the page-->
+      <header>
+        <ul>
+          <li><a class="button" href="index.html"><img src="img/nav_img.png" alt="Cartoon image of Mohammed Alam">HOME</a></li>
+          <li><a class="button" href="about.html">ABOUT</a></li>
+          <li><a class="button" href="projects.html">PROJECTS</a></li>
+          <li><a class="button" id="active" href="contact.html">CONTACT</a></li>
+        </ul>
+      </header>
+      <h3>Send me your questions, comments and project related queries!</h3>
+      <div id="right-column">
+        <form action="mailto:mohammed.alam1@ontariotechu.net" method="post" enctype="text/plain" name="form">
+          <p>
+            <label class="label" for="name">Your Name</label><br>
+            <input class="box" type="text" id="name" name="name" size="50" placeholder="full name" required>
+          </p>
+          <p>
+            <label class="label" for="email">Your Email</label><br>
+            <input class="box" type="email" id="email" name="email" size="50" placeholder="email" required>
+          </p>
+          <p>
+            <label class="label" for="comments">Message</label><br>
+            <textarea class="box" id="comments" name="comments" cols="60" rows="6" placeholder="Leave a comment" required></textarea>
+          </p>
+          <p>
+            <label class="label" for="norobots">Answer this question to prove you're one of us!</label>
+            <input class="box" type="number" id="norobots" name="norobots" placeholder="2 + 2 = ?" required>
+          </p>
+          <p>
+            <input class="box" type="submit" value="Submit"/>
+            <input class="box" type="reset" value="Reset"/>
+          </p>
+        </form>
+      </div>
+      <div class="clear"></div> 
+      <footer>
+        <p id="footer_top">
+          <img src="img/nav_img.png" alt="Cartoon image of Mohammed Alam"><br>
+          mohammed.alam1@ontariotechu.net<br>
+        </p>
+        <p>
+          &copy; 2022 by Mohammed Alam with &hearts;
+        </p>
+      </footer>
+    </div>
+  </body> 
+</html>

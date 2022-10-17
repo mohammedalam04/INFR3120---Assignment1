@@ -2,61 +2,60 @@
 <!DOCTYPE HTML> 
 <!--HTML element contains all page elements/data--> 
 <html lang="en"> 
-    <!--The head element content is not visible in the browser window--> 
-    <head> 
-        <!--The UTF-8 character set provides the most support for all symbols and characters--> 
-        <meta charset="UTF-8"> 
-        <!--The title element is what displays in the browser tab-->
-        <title>About Me</title> 
-        <!-- These lines link all separate files used to this one-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width">
-        <!-- full-size monitor style sheet--> 
-        <link href="css/full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
-        <!-- tablet style sheet--> 
-        <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
-        <!-- phone style sheet--> 
-        <link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
-        <body>
-            <!--This div contains all page elements--> 
-            <div id="wrapper">
-                <!--The header contains elements at the top of the page-->
-                <header id="left-column">
-                    <!--This list is for the navigation bar-->
-                    <nav>
-                        <ul>
-                            <li><img class="icon" src="img/nav_img.png" alt="Cartoon image of Mohammed Alam"></li>
-                            <li><a class="button" href="index.html">HOME</a></li>
-                            <li><a class="button" id="active" href="about.html">ABOUT</a></li>
-                            <li><a class="button" href="projects.html">PROJECTS</a></li>
-                            <li><a class="button" href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <div id="right-column">
-                    <h1>About me!</h1>
-                    <div class="box">
-                        <a href="https://www.linkedin.com/in/mohammedalam04" target="_blank" title="View my professional experience on LinkedIn">
-                        <img src="img/linkedin.png" alt="LinkedIn logo"></a>
-                    </div>
-                    <div class="box">
-                        <img src="img/me.png" alt="A picture of Mohammed Alam">
-                        <video autoplay controls muted preload="auto" poster="img/video_poster.png" id="video">
-                            <source src="vid/myvideo.mp4" type="video/mp4">
-                            <source src="vid/myvideo.ogv" type="video/ogg">
-                        </video>
-                    </div>
-                </div>
-                <div class="clear"></div> 
-                <div id="footer">
-                    <p>
-                    <img class="icon" src="img/nav_img.png" alt="Cartoon image of Mohammed Alam"><br>
-                    mohammed.alam1@ontariotechu.net<br>
-                    &copy; 2022 by Mohammed Alam with &hearts;
-                    </p>
-                </div>
+  <!--The head element content is not visible in the browser window--> 
+  <head> 
+    <!--The UTF-8 character set provides the most support for all symbols and characters--> 
+    <meta charset="UTF-8"> 
+    <!--The title element is what displays in the browser tab-->
+    <title>About Me</title> 
+    <!-- These lines link all separate files used to this one-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <!-- full-size monitor style sheet--> 
+    <link href="css/full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
+    <!-- tablet style sheet--> 
+    <link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)"> 
+    <!-- phone style sheet--> 
+    <link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+  </head>    
+  <body>
+    <!--This div contains all page elements--> 
+    <div id="wrapper">
+      <!--The header contains elements at the top of the page-->
+      <header>
+        <ul>
+          <li><a class="button" href="index.html"><img src="img/nav_img.png" alt="Cartoon image of Mohammed Alam">HOME</a></li>
+          <li><a class="button" id="active" href="about.html">ABOUT</a></li>
+          <li><a class="button" href="projects.html">PROJECTS</a></li>
+          <li><a class="button" href="contact.html">CONTACT</a></li>
+        </ul>
+      </header>
+      <div id="right-column">
+        <h1>About me!</h1>
+        <div class="box">
+          <a href="https://www.linkedin.com/in/mohammedalam04" target="_blank" title="View my professional experience on LinkedIn">
+          <img class="icon" src="img/linkedin.png" alt="LinkedIn logo" width="200px"></a>
         </div>
-    </body> 
+        <div class="box">
+          <img src="img/me.png" alt="A picture of Mohammed Alam">
+          <video autoplay controls muted preload="auto" poster="img/video_poster.png" id="video">
+            <source src="vid/myvideo.mp4" type="video/mp4">
+            <source src="vid/myvideo.ogv" type="video/ogg">
+          </video>
+        </div>
+      </div>
+      <div class="clear"></div> 
+      <footer>
+        <p id="footer_top">
+          <img src="img/nav_img.png" alt="Cartoon image of Mohammed Alam"><br>
+          mohammed.alam1@ontariotechu.net<br>
+        </p>
+        <p>
+          &copy; 2022 by Mohammed Alam with &hearts;
+        </p>
+      </footer>
+    </div>
+  </body> 
 </html>
